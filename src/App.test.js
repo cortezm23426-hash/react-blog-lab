@@ -1,7 +1,9 @@
-import { render, screen } from "@testing-library/react"
+// @vitest-environment jsdom
+
 import React from "react"
-import App from "./App.jsx"
+import { render, screen } from "@testing-library/react"
 import { test, expect } from "vitest"
+import App from "./App.jsx"
 
 test("renders blog title", () => {
   render(React.createElement(App))
